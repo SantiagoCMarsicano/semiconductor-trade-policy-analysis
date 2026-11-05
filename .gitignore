@@ -1,0 +1,38 @@
+# R history and session files
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+
+# RStudio user files
+.Rproj.user/
+
+# R environment variables / secrets
+.Renviron
+
+# R Markdown / knitr temporary files
+*_cache/
+/cache/
+*.utf8.md
+*.knit.md
+
+# Build/check outputs
+/*.tar.gz
+/*.Rcheck/
+
+# OAuth / local credentials
+.httr-oauth
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Do NOT ignore docs/: research design is part of the repository.
