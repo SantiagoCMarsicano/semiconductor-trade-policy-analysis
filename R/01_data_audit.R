@@ -95,7 +95,7 @@ cat("==============================\n\n")
 print(sheet_summary, width = Inf)
 
 regional_terms <- c(
-  "Americas",
+  "Americas",  # exact WSTS source label; normalized to America downstream
   "Europe",
   "Japan",
   "Asia Pacific",

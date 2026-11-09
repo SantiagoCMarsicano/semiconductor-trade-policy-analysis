@@ -4,7 +4,8 @@
 # Purpose:
 #   - Build the main econometric dataset using a single consistent data vintage.
 #   - Re-parse the cached official SIA/WSTS monthly chart PDFs.
-#   - Extract Americas, Europe, Japan, China, Asia Pacific/All Other and Total.
+#   - Extract the WSTS source region "Americas" and normalize it as America,
+#     together with Europe, Japan, China, Asia Pacific/All Other and Total.
 #   - Use current 3MMA values for 2016-2025.
 #   - Reconstruct 2015 from the "Last Year" column in the 2016 PDFs.
 #   - Validate that the five regions add up to Total inside the SIA vintage.
@@ -159,8 +160,8 @@ if (
 # ------------------------------------------------------------
 
 region_patterns <- c(
-  americas =
-    "Americas",
+  america =
+    "Americas",  # exact SIA/WSTS source label
   europe =
     "Europe",
   japan =
@@ -279,8 +280,8 @@ parse_regional_pdf <- function(
           reference_month,
         parse_status =
           "failed_region_rows",
-        americas_row_count =
-          row_counts["americas"],
+        america_row_count =
+          row_counts["america"],
         europe_row_count =
           row_counts["europe"],
         japan_row_count =
@@ -334,8 +335,8 @@ parse_regional_pdf <- function(
     parse_status =
       "ok",
 
-    americas_current =
-      current_values["americas"],
+    america_current =
+      current_values["america"],
     europe_current =
       current_values["europe"],
     japan_current =
@@ -347,8 +348,8 @@ parse_regional_pdf <- function(
     total_current =
       current_values["total"],
 
-    americas_last_year =
-      last_year_values["americas"],
+    america_last_year =
+      last_year_values["america"],
     europe_last_year =
       last_year_values["europe"],
     japan_last_year =
@@ -360,8 +361,8 @@ parse_regional_pdf <- function(
     total_last_year =
       last_year_values["total"],
 
-    americas_consistent =
-      consistency["americas"],
+    america_consistent =
+      consistency["america"],
     europe_consistent =
       consistency["europe"],
     japan_consistent =
@@ -530,8 +531,8 @@ series_2016_2025 <- regional_audit %>%
     date =
       reference_month,
 
-    americas_3mma_usd_billions =
-      americas_current,
+    america_3mma_usd_billions =
+      america_current,
 
     europe_3mma_usd_billions =
       europe_current,
@@ -576,8 +577,8 @@ series_2015 <- regional_audit %>%
       reference_month %m-%
       years(1),
 
-    americas_3mma_usd_billions =
-      americas_last_year,
+    america_3mma_usd_billions =
+      america_last_year,
 
     europe_3mma_usd_billions =
       europe_last_year,
@@ -625,7 +626,7 @@ sia_regional <- bind_rows(
       asia_pacific_other_3mma_usd_billions,
 
     calculated_total_3mma_usd_billions =
-      americas_3mma_usd_billions +
+      america_3mma_usd_billions +
       europe_3mma_usd_billions +
       japan_3mma_usd_billions +
       china_3mma_usd_billions +
@@ -635,8 +636,8 @@ sia_regional <- bind_rows(
       china_3mma_usd_billions /
       asia_pacific_total_3mma_usd_billions,
 
-    americas_share_total =
-      americas_3mma_usd_billions /
+    america_share_total =
+      america_3mma_usd_billions /
       total_3mma_usd_billions,
 
     europe_share_total =
@@ -677,7 +678,7 @@ completeness <- expected_dates %>%
     sia_regional %>%
       select(
         date,
-        americas_3mma_usd_billions,
+        america_3mma_usd_billions,
         europe_3mma_usd_billions,
         japan_3mma_usd_billions,
         china_3mma_usd_billions,
@@ -710,7 +711,7 @@ internal_validation <- sia_regional %>%
   transmute(
     date,
 
-    americas_3mma_usd_billions,
+    america_3mma_usd_billions,
     europe_3mma_usd_billions,
     japan_3mma_usd_billions,
     china_3mma_usd_billions,
@@ -766,8 +767,8 @@ wsts_historical <- read_csv(
     values_from = sales_usd_billions
   ) %>%
   rename(
-    wsts_americas =
-      Americas,
+    wsts_america =
+      America,
     wsts_europe =
       Europe,
     wsts_japan =
@@ -781,8 +782,8 @@ wsts_historical <- read_csv(
 vintage_comparison <- sia_regional %>%
   select(
     date,
-    sia_americas =
-      americas_3mma_usd_billions,
+    sia_america =
+      america_3mma_usd_billions,
     sia_europe =
       europe_3mma_usd_billions,
     sia_japan =
@@ -797,9 +798,9 @@ vintage_comparison <- sia_regional %>%
     by = "date"
   ) %>%
   mutate(
-    gap_americas =
-      sia_americas -
-      wsts_americas,
+    gap_america =
+      sia_america -
+      wsts_america,
 
     gap_europe =
       sia_europe -
@@ -824,7 +825,7 @@ vintage_comparison <- sia_regional %>%
 
 vintage_summary <- tibble(
   region = c(
-    "Americas",
+    "America",
     "Europe",
     "Japan",
     "Asia Pacific",
@@ -833,8 +834,8 @@ vintage_summary <- tibble(
 
   correlation = c(
     cor(
-      vintage_comparison$sia_americas,
-      vintage_comparison$wsts_americas,
+      vintage_comparison$sia_america,
+      vintage_comparison$wsts_america,
       use = "complete.obs"
     ),
     cor(
@@ -861,7 +862,7 @@ vintage_summary <- tibble(
 
   mean_gap_billions = c(
     mean(
-      vintage_comparison$gap_americas,
+      vintage_comparison$gap_america,
       na.rm = TRUE
     ),
     mean(
@@ -885,7 +886,7 @@ vintage_summary <- tibble(
   max_abs_gap_billions = c(
     max(
       abs(
-        vintage_comparison$gap_americas
+        vintage_comparison$gap_america
       ),
       na.rm = TRUE
     ),
@@ -1029,9 +1030,9 @@ cat(
 print(
   regional_audit %>%
     summarise(
-      americas =
+      america =
         sum(
-          !americas_consistent,
+          !america_consistent,
           na.rm = TRUE
         ),
       europe =

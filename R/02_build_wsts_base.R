@@ -84,8 +84,16 @@ if (!file.exists(wsts_path)) {
 start_year <- 2010L
 end_year <- 2025L
 
-regions_expected <- c(
+source_regions_expected <- c(
   "Americas",
+  "Europe",
+  "Japan",
+  "Asia Pacific",
+  "Worldwide"
+)
+
+regions_expected <- c(
+  "America",
   "Europe",
   "Japan",
   "Asia Pacific",
@@ -114,6 +122,7 @@ parse_wsts_sheet <- function(sheet_name) {
   # row 4 -> month names
   # row 5 onward -> repeated blocks:
   # year / Americas / Europe / Japan / Asia Pacific / Worldwide
+  # WSTS source label "Americas" is normalized to project label "America".
 
   data_rows <- raw[5:nrow(raw), , drop = FALSE]
 
@@ -164,7 +173,7 @@ parse_wsts_sheet <- function(sheet_name) {
       as.character() %>%
       str_trim()
 
-    if (!all(regions_expected %in% region_labels)) {
+    if (!all(source_regions_expected %in% region_labels)) {
       warning(
         paste0(
           "Unexpected region structure for year ",
@@ -217,7 +226,11 @@ parse_wsts_sheet <- function(sheet_name) {
         1
       ),
       sales_usd_billions =
-        sales_usd_thousands / 1e6
+        sales_usd_thousands / 1e6,
+      region = recode(
+        region,
+        "Americas" = "America"
+      )
     ) %>%
     select(
       date,
@@ -273,7 +286,7 @@ validate_world_total <- function(
     ) %>%
     mutate(
       calculated_worldwide =
-        Americas +
+        America +
         Europe +
         Japan +
         `Asia Pacific`,
