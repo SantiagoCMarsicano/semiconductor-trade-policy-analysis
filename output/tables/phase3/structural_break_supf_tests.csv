@@ -1,0 +1,21 @@
+region,specification,h_setting,minimum_segment,variance_estimator,statistic,p_value,significant_01,significant_05,significant_10,decision_05,decision_10,evidence_strength
+America,growth_mean,primary_24_months,24,classical,2.085050109047351,0.7980828932798096,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+America,growth_mean,primary_24_months,24,HAC,5.7624624669062134,0.19446973563510192,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+America,log_trend,primary_24_months,24,classical,168.7260772460913,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+America,log_trend,primary_24_months,24,HAC,388.44877016870026,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Europe,growth_mean,primary_24_months,24,classical,0.6297064118707223,1,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Europe,growth_mean,primary_24_months,24,HAC,3.2204720666026714,0.5429675596756605,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Europe,log_trend,primary_24_months,24,classical,124.7912123384067,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Europe,log_trend,primary_24_months,24,HAC,65.10852213232079,3.37702088515357e-13,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Japan,growth_mean,primary_24_months,24,classical,0.4975569360322892,1,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Japan,growth_mean,primary_24_months,24,HAC,1.423771717466424,0.9471792228364545,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Japan,log_trend,primary_24_months,24,classical,319.27451540059815,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Japan,log_trend,primary_24_months,24,HAC,510.8712842403184,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Asia Pacific,growth_mean,primary_24_months,24,classical,1.220301190653548,0.9819872910166659,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Asia Pacific,growth_mean,primary_24_months,24,HAC,6.886572291136756,0.11925564707511585,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Asia Pacific,log_trend,primary_24_months,24,classical,95.62539609128726,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Asia Pacific,log_trend,primary_24_months,24,HAC,50.263047258863104,5.845485484545776e-10,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Worldwide,growth_mean,primary_24_months,24,classical,1.338473584710978,0.9629963077384575,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Worldwide,growth_mean,primary_24_months,24,HAC,7.18158233179429,0.10466055415645421,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Worldwide,log_trend,primary_24_months,24,classical,74.28730286945371,3.247402347028583e-15,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Worldwide,log_trend,primary_24_months,24,HAC,61.04986729936702,2.6157964683193313e-12,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)

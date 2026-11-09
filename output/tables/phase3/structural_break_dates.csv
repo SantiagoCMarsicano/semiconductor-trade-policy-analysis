@@ -1,0 +1,38 @@
+region,specification,h_setting,minimum_segment,break_number,break_position,break_date_last_regime,next_regime_start,ci_lower_position,ci_lower_date,ci_upper_position,ci_upper_date
+America,log_trend,primary_24_months,24,1,41,2013-05-01,2013-06-01,38,2013-02-01,48,2013-12-01
+America,log_trend,primary_24_months,24,2,72,2015-12-01,2016-01-01,70,2015-10-01,73,2016-01-01
+America,log_trend,primary_24_months,24,3,107,2018-11-01,2018-12-01,106,2018-10-01,108,2018-12-01
+America,log_trend,primary_24_months,24,4,156,2022-12-01,2023-01-01,152,2022-08-01,157,2023-01-01
+Europe,log_trend,primary_24_months,24,1,44,2013-08-01,2013-09-01,42,2013-06-01,47,2013-11-01
+Europe,log_trend,primary_24_months,24,2,73,2016-01-01,2016-02-01,72,2015-12-01,74,2016-02-01
+Europe,log_trend,primary_24_months,24,3,98,2018-02-01,2018-03-01,97,2018-01-01,99,2018-03-01
+Europe,log_trend,primary_24_months,24,4,123,2020-03-01,2020-04-01,122,2020-02-01,124,2020-04-01
+Europe,log_trend,primary_24_months,24,5,147,2022-03-01,2022-04-01,146,2022-02-01,148,2022-04-01
+Japan,log_trend,primary_24_months,24,1,36,2012-12-01,2013-01-01,30,2012-06-01,38,2013-02-01
+Japan,log_trend,primary_24_months,24,2,60,2014-12-01,2015-01-01,57,2014-09-01,62,2015-02-01
+Japan,log_trend,primary_24_months,24,3,108,2018-12-01,2019-01-01,107,2018-11-01,110,2019-02-01
+Japan,log_trend,primary_24_months,24,4,137,2021-05-01,2021-06-01,134,2021-02-01,138,2021-06-01
+Asia Pacific,log_trend,primary_24_months,24,1,72,2015-12-01,2016-01-01,70,2015-10-01,73,2016-01-01
+Asia Pacific,log_trend,primary_24_months,24,2,107,2018-11-01,2018-12-01,106,2018-10-01,108,2018-12-01
+Asia Pacific,log_trend,primary_24_months,24,3,153,2022-09-01,2022-10-01,151,2022-07-01,154,2022-10-01
+Worldwide,log_trend,primary_24_months,24,1,72,2015-12-01,2016-01-01,71,2015-11-01,73,2016-01-01
+Worldwide,log_trend,primary_24_months,24,2,107,2018-11-01,2018-12-01,106,2018-10-01,108,2018-12-01
+Worldwide,log_trend,primary_24_months,24,3,153,2022-09-01,2022-10-01,151,2022-07-01,154,2022-10-01
+America,log_trend,robustness_15_percent,0.15,1,41,2013-05-01,2013-06-01,38,2013-02-01,48,2013-12-01
+America,log_trend,robustness_15_percent,0.15,2,72,2015-12-01,2016-01-01,70,2015-10-01,73,2016-01-01
+America,log_trend,robustness_15_percent,0.15,3,107,2018-11-01,2018-12-01,106,2018-10-01,108,2018-12-01
+America,log_trend,robustness_15_percent,0.15,4,156,2022-12-01,2023-01-01,152,2022-08-01,157,2023-01-01
+Europe,log_trend,robustness_15_percent,0.15,1,41,2013-05-01,2013-06-01,39,2013-03-01,48,2013-12-01
+Europe,log_trend,robustness_15_percent,0.15,2,86,2017-02-01,2017-03-01,85,2017-01-01,88,2017-04-01
+Europe,log_trend,robustness_15_percent,0.15,3,123,2020-03-01,2020-04-01,121,2020-01-01,124,2020-04-01
+Europe,log_trend,robustness_15_percent,0.15,4,151,2022-07-01,2022-08-01,150,2022-06-01,152,2022-08-01
+Japan,log_trend,robustness_15_percent,0.15,1,34,2012-10-01,2012-11-01,30,2012-06-01,43,2013-07-01
+Japan,log_trend,robustness_15_percent,0.15,2,77,2016-05-01,2016-06-01,76,2016-04-01,79,2016-07-01
+Japan,log_trend,robustness_15_percent,0.15,3,108,2018-12-01,2019-01-01,107,2018-11-01,109,2019-01-01
+Japan,log_trend,robustness_15_percent,0.15,4,137,2021-05-01,2021-06-01,134,2021-02-01,138,2021-06-01
+Asia Pacific,log_trend,robustness_15_percent,0.15,1,72,2015-12-01,2016-01-01,70,2015-10-01,73,2016-01-01
+Asia Pacific,log_trend,robustness_15_percent,0.15,2,107,2018-11-01,2018-12-01,106,2018-10-01,108,2018-12-01
+Asia Pacific,log_trend,robustness_15_percent,0.15,3,153,2022-09-01,2022-10-01,151,2022-07-01,154,2022-10-01
+Worldwide,log_trend,robustness_15_percent,0.15,1,72,2015-12-01,2016-01-01,71,2015-11-01,73,2016-01-01
+Worldwide,log_trend,robustness_15_percent,0.15,2,107,2018-11-01,2018-12-01,106,2018-10-01,108,2018-12-01
+Worldwide,log_trend,robustness_15_percent,0.15,3,153,2022-09-01,2022-10-01,151,2022-07-01,154,2022-10-01

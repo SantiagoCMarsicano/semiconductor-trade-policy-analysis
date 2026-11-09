@@ -1,0 +1,131 @@
+region,specification,number_of_breaks,bic,selected_by_bic,h_setting,minimum_segment
+America,growth_mean,0,-285.29194891412584,TRUE,primary_24_months,24
+America,growth_mean,1,-276.88297811729495,FALSE,primary_24_months,24
+America,growth_mean,2,-267.0384525520711,FALSE,primary_24_months,24
+America,growth_mean,3,-257.7633796454343,FALSE,primary_24_months,24
+America,growth_mean,4,-247.94497591050595,FALSE,primary_24_months,24
+America,growth_mean,5,-237.70901548590922,FALSE,primary_24_months,24
+America,growth_mean,6,-226.8032090153455,FALSE,primary_24_months,24
+America,log_trend,0,-86.21180126551351,FALSE,primary_24_months,24
+America,log_trend,1,-193.4203520399051,FALSE,primary_24_months,24
+America,log_trend,2,-233.5819655891233,FALSE,primary_24_months,24
+America,log_trend,3,-288.6696067612397,FALSE,primary_24_months,24
+America,log_trend,4,-289.6808578877315,TRUE,primary_24_months,24
+America,log_trend,5,-279.09975796775666,FALSE,primary_24_months,24
+America,log_trend,6,-263.75321747354934,FALSE,primary_24_months,24
+Europe,growth_mean,0,-355.7427815950434,TRUE,primary_24_months,24
+Europe,growth_mean,1,-345.8735469372374,FALSE,primary_24_months,24
+Europe,growth_mean,2,-336.1913994309966,FALSE,primary_24_months,24
+Europe,growth_mean,3,-326.4517650087956,FALSE,primary_24_months,24
+Europe,growth_mean,4,-316.6002945115505,FALSE,primary_24_months,24
+Europe,growth_mean,5,-306.3411375195749,FALSE,primary_24_months,24
+Europe,growth_mean,6,-295.9567546911768,FALSE,primary_24_months,24
+Europe,log_trend,0,-249.9041598593836,FALSE,primary_24_months,24
+Europe,log_trend,1,-331.877712510079,FALSE,primary_24_months,24
+Europe,log_trend,2,-375.22713154838704,FALSE,primary_24_months,24
+Europe,log_trend,3,-398.6178937144728,FALSE,primary_24_months,24
+Europe,log_trend,4,-406.30303145951933,FALSE,primary_24_months,24
+Europe,log_trend,5,-408.5179458810399,TRUE,primary_24_months,24
+Europe,log_trend,6,-403.9406780327671,FALSE,primary_24_months,24
+Japan,growth_mean,0,-367.63854686818775,TRUE,primary_24_months,24
+Japan,growth_mean,1,-357.63616140141875,FALSE,primary_24_months,24
+Japan,growth_mean,2,-347.9765394198461,FALSE,primary_24_months,24
+Japan,growth_mean,3,-337.8599400134097,FALSE,primary_24_months,24
+Japan,growth_mean,4,-327.8952178066316,FALSE,primary_24_months,24
+Japan,growth_mean,5,-317.99136652429485,FALSE,primary_24_months,24
+Japan,growth_mean,6,-306.9728305635139,FALSE,primary_24_months,24
+Japan,log_trend,0,-179.88493314033818,FALSE,primary_24_months,24
+Japan,log_trend,1,-354.69363321126383,FALSE,primary_24_months,24
+Japan,log_trend,2,-389.92186862908767,FALSE,primary_24_months,24
+Japan,log_trend,3,-406.55355046034964,FALSE,primary_24_months,24
+Japan,log_trend,4,-411.6487275943515,TRUE,primary_24_months,24
+Japan,log_trend,5,-398.1511726838668,FALSE,primary_24_months,24
+Japan,log_trend,6,-384.1580271322809,FALSE,primary_24_months,24
+Asia Pacific,growth_mean,0,-312.1704044722474,TRUE,primary_24_months,24
+Asia Pacific,growth_mean,1,-302.89510790257316,FALSE,primary_24_months,24
+Asia Pacific,growth_mean,2,-292.9994433819245,FALSE,primary_24_months,24
+Asia Pacific,growth_mean,3,-282.8486832009387,FALSE,primary_24_months,24
+Asia Pacific,growth_mean,4,-272.5081517304984,FALSE,primary_24_months,24
+Asia Pacific,growth_mean,5,-262.3407526575729,FALSE,primary_24_months,24
+Asia Pacific,growth_mean,6,-252.0006522962782,FALSE,primary_24_months,24
+Asia Pacific,log_trend,0,-264.30928657333726,FALSE,primary_24_months,24
+Asia Pacific,log_trend,1,-327.4895768035555,FALSE,primary_24_months,24
+Asia Pacific,log_trend,2,-331.35687099106207,FALSE,primary_24_months,24
+Asia Pacific,log_trend,3,-357.1894608846988,TRUE,primary_24_months,24
+Asia Pacific,log_trend,4,-355.17266961796327,FALSE,primary_24_months,24
+Asia Pacific,log_trend,5,-351.9225350970598,FALSE,primary_24_months,24
+Asia Pacific,log_trend,6,-339.8421121725492,FALSE,primary_24_months,24
+Worldwide,growth_mean,0,-341.6707410114559,TRUE,primary_24_months,24
+Worldwide,growth_mean,1,-332.5140643737685,FALSE,primary_24_months,24
+Worldwide,growth_mean,2,-322.3778679843644,FALSE,primary_24_months,24
+Worldwide,growth_mean,3,-312.62481555750395,FALSE,primary_24_months,24
+Worldwide,growth_mean,4,-302.3831228430053,FALSE,primary_24_months,24
+Worldwide,growth_mean,5,-291.9466910632073,FALSE,primary_24_months,24
+Worldwide,growth_mean,6,-281.48742278213103,FALSE,primary_24_months,24
+Worldwide,log_trend,0,-261.6706783538794,FALSE,primary_24_months,24
+Worldwide,log_trend,1,-309.83390730380444,FALSE,primary_24_months,24
+Worldwide,log_trend,2,-335.51118087795345,FALSE,primary_24_months,24
+Worldwide,log_trend,3,-387.19568966829365,TRUE,primary_24_months,24
+Worldwide,log_trend,4,-384.7514264008983,FALSE,primary_24_months,24
+Worldwide,log_trend,5,-383.15506067202045,FALSE,primary_24_months,24
+Worldwide,log_trend,6,-373.9632241407176,FALSE,primary_24_months,24
+America,growth_mean,0,-285.29194891412584,TRUE,robustness_15_percent,0.15
+America,growth_mean,1,-276.88297811729495,FALSE,robustness_15_percent,0.15
+America,growth_mean,2,-267.0384525520711,FALSE,robustness_15_percent,0.15
+America,growth_mean,3,-257.7633796454343,FALSE,robustness_15_percent,0.15
+America,growth_mean,4,-247.94497591050595,FALSE,robustness_15_percent,0.15
+America,growth_mean,5,-237.214791009571,FALSE,robustness_15_percent,0.15
+America,log_trend,0,-86.21180126551351,FALSE,robustness_15_percent,0.15
+America,log_trend,1,-193.4203520399051,FALSE,robustness_15_percent,0.15
+America,log_trend,2,-233.5819655891233,FALSE,robustness_15_percent,0.15
+America,log_trend,3,-288.6696067612397,FALSE,robustness_15_percent,0.15
+America,log_trend,4,-289.6808578877315,TRUE,robustness_15_percent,0.15
+America,log_trend,5,-264.4547576429484,FALSE,robustness_15_percent,0.15
+Europe,growth_mean,0,-355.7427815950434,TRUE,robustness_15_percent,0.15
+Europe,growth_mean,1,-345.8735469372374,FALSE,robustness_15_percent,0.15
+Europe,growth_mean,2,-335.9665511122575,FALSE,robustness_15_percent,0.15
+Europe,growth_mean,3,-325.8900699905335,FALSE,robustness_15_percent,0.15
+Europe,growth_mean,4,-315.67705983044783,FALSE,robustness_15_percent,0.15
+Europe,growth_mean,5,-305.2791643966574,FALSE,robustness_15_percent,0.15
+Europe,log_trend,0,-249.9041598593836,FALSE,robustness_15_percent,0.15
+Europe,log_trend,1,-331.877712510079,FALSE,robustness_15_percent,0.15
+Europe,log_trend,2,-375.22713154838704,FALSE,robustness_15_percent,0.15
+Europe,log_trend,3,-388.7589701559522,FALSE,robustness_15_percent,0.15
+Europe,log_trend,4,-395.1993030730716,TRUE,robustness_15_percent,0.15
+Europe,log_trend,5,-389.21707105419546,FALSE,robustness_15_percent,0.15
+Japan,growth_mean,0,-367.63854686818775,TRUE,robustness_15_percent,0.15
+Japan,growth_mean,1,-357.63616140141875,FALSE,robustness_15_percent,0.15
+Japan,growth_mean,2,-347.9765394198461,FALSE,robustness_15_percent,0.15
+Japan,growth_mean,3,-337.84520740967963,FALSE,robustness_15_percent,0.15
+Japan,growth_mean,4,-327.6606597380941,FALSE,robustness_15_percent,0.15
+Japan,growth_mean,5,-317.53179484032523,FALSE,robustness_15_percent,0.15
+Japan,log_trend,0,-179.88493314033818,FALSE,robustness_15_percent,0.15
+Japan,log_trend,1,-354.69363321126383,FALSE,robustness_15_percent,0.15
+Japan,log_trend,2,-389.92186862908767,FALSE,robustness_15_percent,0.15
+Japan,log_trend,3,-406.55355046034964,FALSE,robustness_15_percent,0.15
+Japan,log_trend,4,-406.82909223125256,TRUE,robustness_15_percent,0.15
+Japan,log_trend,5,-388.9569119008239,FALSE,robustness_15_percent,0.15
+Asia Pacific,growth_mean,0,-312.1704044722474,TRUE,robustness_15_percent,0.15
+Asia Pacific,growth_mean,1,-302.89510790257316,FALSE,robustness_15_percent,0.15
+Asia Pacific,growth_mean,2,-292.9158473126521,FALSE,robustness_15_percent,0.15
+Asia Pacific,growth_mean,3,-282.8486832009387,FALSE,robustness_15_percent,0.15
+Asia Pacific,growth_mean,4,-272.4818830458888,FALSE,robustness_15_percent,0.15
+Asia Pacific,growth_mean,5,-261.9545648415288,FALSE,robustness_15_percent,0.15
+Asia Pacific,log_trend,0,-264.30928657333726,FALSE,robustness_15_percent,0.15
+Asia Pacific,log_trend,1,-327.4895768035555,FALSE,robustness_15_percent,0.15
+Asia Pacific,log_trend,2,-331.35687099106207,FALSE,robustness_15_percent,0.15
+Asia Pacific,log_trend,3,-357.1894608846988,TRUE,robustness_15_percent,0.15
+Asia Pacific,log_trend,4,-351.7872530173876,FALSE,robustness_15_percent,0.15
+Asia Pacific,log_trend,5,-343.5833151311798,FALSE,robustness_15_percent,0.15
+Worldwide,growth_mean,0,-341.6707410114559,TRUE,robustness_15_percent,0.15
+Worldwide,growth_mean,1,-332.5140643737685,FALSE,robustness_15_percent,0.15
+Worldwide,growth_mean,2,-322.3778679843644,FALSE,robustness_15_percent,0.15
+Worldwide,growth_mean,3,-312.62481555750395,FALSE,robustness_15_percent,0.15
+Worldwide,growth_mean,4,-302.3831228430053,FALSE,robustness_15_percent,0.15
+Worldwide,growth_mean,5,-291.70985238689286,FALSE,robustness_15_percent,0.15
+Worldwide,log_trend,0,-261.6706783538794,FALSE,robustness_15_percent,0.15
+Worldwide,log_trend,1,-309.83390730380444,FALSE,robustness_15_percent,0.15
+Worldwide,log_trend,2,-335.51118087795345,FALSE,robustness_15_percent,0.15
+Worldwide,log_trend,3,-387.19568966829365,TRUE,robustness_15_percent,0.15
+Worldwide,log_trend,4,-384.61517760509366,FALSE,robustness_15_percent,0.15
+Worldwide,log_trend,5,-376.05870208194807,FALSE,robustness_15_percent,0.15
