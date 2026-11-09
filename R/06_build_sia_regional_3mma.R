@@ -79,7 +79,8 @@ processed_dir <- file.path(
 
 output_dir <- file.path(
   "output",
-  "tables"
+  "tables",
+  "phase1"
 )
 
 dir.create(
@@ -517,7 +518,7 @@ if (nrow(failed_regional) > 0) {
     paste0(
       nrow(failed_regional),
       " cached PDFs could not be parsed. ",
-      "Inspect output/tables/sia_regional_pdf_parse_audit.csv"
+      "Inspect output/tables/phase1/sia_regional_pdf_parse_audit.csv"
     )
   )
 }

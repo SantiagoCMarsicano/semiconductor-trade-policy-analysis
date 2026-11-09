@@ -53,7 +53,8 @@ processed_dir <- file.path(
 
 output_tables_dir <- file.path(
   "output",
-  "tables"
+  "tables",
+  "phase1"
 )
 
 dir.create(
@@ -504,9 +505,9 @@ cat(
 )
 
 cat(
-  "- output/tables/wsts_regional_total_validation.csv\n"
+  "- output/tables/phase1/wsts_regional_total_validation.csv\n"
 )
 
 cat(
-  "- output/tables/wsts_completeness_summary.csv\n"
+  "- output/tables/phase1/wsts_completeness_summary.csv\n"
 )

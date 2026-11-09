@@ -15,7 +15,7 @@
 #
 # Outputs:
 #   output/figures/monthly_vs_3mma/*.png
-#   output/tables/monthly_vs_3mma_*.csv
+#   output/tables/phase2/monthly_vs_3mma_*.csv
 #
 # Visual convention:
 #   The smoothed 3-month moving-average series is drawn as a
@@ -63,7 +63,7 @@ figures_dir <- file.path(
 )
 
 tables_dir <- file.path(
-  "output", "tables"
+  "output", "tables", "phase2"
 )
 
 dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
@@ -540,5 +540,5 @@ print(
   n = Inf
 )
 
-cat("\nFiles created in output/tables/.\n")
+cat("\nFiles created in output/tables/phase2/.\n")
 cat("Figures saved to output/figures/monthly_vs_3mma/.\n")

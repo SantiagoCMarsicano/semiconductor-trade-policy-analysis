@@ -10,7 +10,7 @@
 #
 # Outputs:
 #   output/figures/3mma_eda/*.png
-#   output/tables/eda_*.csv
+#   output/tables/phase2/eda_*.csv
 #
 # Important:
 #   - All data series use solid lines.
@@ -60,7 +60,7 @@ figures_dir <- file.path(
 )
 
 tables_dir <- file.path(
-  "output", "tables"
+  "output", "tables", "phase2"
 )
 
 dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)

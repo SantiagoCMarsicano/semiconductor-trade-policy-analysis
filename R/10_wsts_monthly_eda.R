@@ -9,7 +9,7 @@
 #   data/processed/wsts_monthly_2010_2025.csv
 #
 # Outputs:
-#   output/tables/wsts_monthly_*.csv
+#   output/tables/phase2/wsts_monthly_*.csv
 #   output/figures/wsts_monthly_eda/*.png
 
 required_packages <- c(
@@ -44,7 +44,7 @@ figures_dir <- file.path(
 )
 
 tables_dir <- file.path(
-  "output", "tables"
+  "output", "tables", "phase2"
 )
 
 dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
@@ -539,7 +539,7 @@ cat(
 cat("SERIES SUMMARY\n\n")
 print(series_summary, n = Inf)
 
-cat("\nTables saved to output/tables/.\n")
+cat("\nTables saved to output/tables/phase2/.\n")
 cat("Figures saved to output/figures/wsts_monthly_eda/.\n")
 cat(
   "\nNo policy dates or causal claims are introduced in this script.\n"

@@ -9,7 +9,7 @@
 # Reproducibility:
 #   Input  : data/processed/sia_regional_3mma_2015_2025.csv
 #   Figures: output/figures/3mma_diagnostics/
-#   Tables : output/tables/
+#   Tables : output/tables/phase2/
 #
 # Statistical conventions:
 #   - ADF H0  : unit root / non-stationary.
@@ -78,7 +78,8 @@ figures_dir <- file.path(
 
 tables_dir <- file.path(
   "output",
-  "tables"
+  "tables",
+  "phase2"
 )
 
 dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)

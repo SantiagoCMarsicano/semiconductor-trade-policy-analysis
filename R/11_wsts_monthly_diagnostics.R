@@ -46,7 +46,7 @@ figures_dir <- file.path(
 )
 
 tables_dir <- file.path(
-  "output", "tables"
+  "output", "tables", "phase2"
 )
 
 dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
@@ -618,7 +618,7 @@ print(
   n = Inf
 )
 
-cat("\nFiles created in output/tables/.\n")
+cat("\nFiles created in output/tables/phase2/.\n")
 cat(
   "Diagnostic figures saved to output/figures/wsts_monthly_diagnostics/.\n"
 )

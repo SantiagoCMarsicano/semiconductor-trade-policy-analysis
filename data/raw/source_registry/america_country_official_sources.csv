@@ -1,0 +1,5 @@
+source_name,source_type,url,access_status,notes
+WSTS Americas by Country,quarterly_report,NA,authorized_access_required,"Quarterly country-level semiconductor shipments for USA incl. Puerto Rico, Canada, Mexico, Brazil, and Rest of Latin America."
+WSTS Market Statistics,documentation,https://www.wsts.org/61/MARKET-STATISTICS,public,Official WSTS page documenting the America-by-Country report and its quarterly frequency.
+WSTS Publication Schedule,documentation,https://www.wsts.org/61/73/Publication-Schedule-for-WSTS-Reports,public,Official publication schedule confirming quarterly By-Country report releases.
+ESIA WSTS Subscription Overview,documentation,https://www.eusemiconductors.eu/esia/industry-statistics/wsts,public,ESIA documentation describing WSTS subscription products and the annual By-Country Summary from 2003 onward.

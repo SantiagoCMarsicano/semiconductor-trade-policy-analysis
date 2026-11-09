@@ -157,7 +157,7 @@ walk2(
 )
 
 dir.create(
-  file.path("output", "tables"),
+  file.path("output", "tables", "phase1"),
   recursive = TRUE,
   showWarnings = FALSE
 )
@@ -167,6 +167,7 @@ write.csv(
   file.path(
     "output",
     "tables",
+    "phase1",
     "wsts_workbook_audit.csv"
   ),
   row.names = FALSE
@@ -175,6 +176,6 @@ write.csv(
 cat("\n\nAudit completed successfully.\n")
 cat(
   "Summary saved to:",
-  file.path("output", "tables", "wsts_workbook_audit.csv"),
+  file.path("output", "tables", "phase1", "wsts_workbook_audit.csv"),
   "\n"
 )

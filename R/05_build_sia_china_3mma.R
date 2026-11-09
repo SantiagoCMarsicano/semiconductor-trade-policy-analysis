@@ -81,7 +81,8 @@ processed_dir <- file.path(
 
 output_dir <- file.path(
   "output",
-  "tables"
+  "tables",
+  "phase1"
 )
 
 source_registry_dir <- file.path(
@@ -324,7 +325,7 @@ if (nrow(invalid_urls) > 0) {
   stop(
     paste0(
       "Some chart URLs still do not have a valid HTTP/HTTPS scheme. ",
-      "Inspect output/tables/sia_invalid_chart_urls.csv"
+      "Inspect output/tables/phase1/sia_invalid_chart_urls.csv"
     )
   )
 }
@@ -820,7 +821,7 @@ if (nrow(download_failures) > 0) {
     paste0(
       nrow(download_failures),
       " PDF downloads failed. ",
-      "Inspect output/tables/sia_pdf_parse_audit.csv."
+      "Inspect output/tables/phase1/sia_pdf_parse_audit.csv."
     )
   )
 }
@@ -830,7 +831,7 @@ if (nrow(parser_failures) > 0) {
     paste0(
       nrow(parser_failures),
       " PDFs downloaded but could not be parsed. ",
-      "Inspect output/tables/sia_pdf_parse_audit.csv."
+      "Inspect output/tables/phase1/sia_pdf_parse_audit.csv."
     )
   )
 }

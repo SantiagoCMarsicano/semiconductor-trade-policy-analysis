@@ -58,7 +58,8 @@ registry_dir <- file.path(
 
 output_dir <- file.path(
   "output",
-  "tables"
+  "tables",
+  "phase1"
 )
 
 dir.create(
