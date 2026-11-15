@@ -1,0 +1,89 @@
+series,specification,number_of_breaks,bic,selected_by_bic,h_setting,minimum_segment
+China,sales_growth_mean,0,-503.64804146765533,TRUE,primary_24_months,24
+China,sales_growth_mean,1,-499.8077418232116,FALSE,primary_24_months,24
+China,sales_growth_mean,2,-497.383349462695,FALSE,primary_24_months,24
+China,sales_growth_mean,3,-489.06105246230413,FALSE,primary_24_months,24
+China,sales_growth_mean,4,-477.75937030200527,FALSE,primary_24_months,24
+China,sales_log_trend,0,-156.7865654824771,FALSE,primary_24_months,24
+China,sales_log_trend,1,-254.10962628018964,FALSE,primary_24_months,24
+China,sales_log_trend,2,-319.12713253250416,FALSE,primary_24_months,24
+China,sales_log_trend,3,-325.91526386807993,FALSE,primary_24_months,24
+China,sales_log_trend,4,-326.43311376058364,TRUE,primary_24_months,24
+Asia Pacific/All Other,sales_growth_mean,0,-566.5015841909731,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_growth_mean,1,-576.3784949228973,TRUE,primary_24_months,24
+Asia Pacific/All Other,sales_growth_mean,2,-570.70539061108,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_growth_mean,3,-565.752647607368,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_growth_mean,4,-557.1062724391169,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_log_trend,0,-181.89432313947472,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_log_trend,1,-250.34400246376285,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_log_trend,2,-282.1346374679305,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_log_trend,3,-302.5586975983504,FALSE,primary_24_months,24
+Asia Pacific/All Other,sales_log_trend,4,-307.2656713573956,TRUE,primary_24_months,24
+Total,sales_growth_mean,0,-569.5587181231283,FALSE,primary_24_months,24
+Total,sales_growth_mean,1,-571.2749740300593,TRUE,primary_24_months,24
+Total,sales_growth_mean,2,-564.8771611065281,FALSE,primary_24_months,24
+Total,sales_growth_mean,3,-556.0531520038766,FALSE,primary_24_months,24
+Total,sales_growth_mean,4,-546.6319930955535,FALSE,primary_24_months,24
+Total,sales_log_trend,0,-217.54071911678784,FALSE,primary_24_months,24
+Total,sales_log_trend,1,-266.13198156372215,FALSE,primary_24_months,24
+Total,sales_log_trend,2,-334.22856418835363,FALSE,primary_24_months,24
+Total,sales_log_trend,3,-352.3511252863169,FALSE,primary_24_months,24
+Total,sales_log_trend,4,-363.15902207486204,TRUE,primary_24_months,24
+China share of Asia Pacific,share_change,0,-928.4348259534189,TRUE,primary_24_months,24
+China share of Asia Pacific,share_change,1,-925.4561404315026,FALSE,primary_24_months,24
+China share of Asia Pacific,share_change,2,-918.5422622510217,FALSE,primary_24_months,24
+China share of Asia Pacific,share_change,3,-909.1573424853107,FALSE,primary_24_months,24
+China share of Asia Pacific,share_change,4,-897.8091731423935,FALSE,primary_24_months,24
+China share of Asia Pacific,share_trend,0,-574.2256984083091,FALSE,primary_24_months,24
+China share of Asia Pacific,share_trend,1,-729.234481328249,FALSE,primary_24_months,24
+China share of Asia Pacific,share_trend,2,-770.7679479836822,FALSE,primary_24_months,24
+China share of Asia Pacific,share_trend,3,-778.9543823512081,TRUE,primary_24_months,24
+China share of Asia Pacific,share_trend,4,-761.7935937019056,FALSE,primary_24_months,24
+China,sales_growth_mean,0,-503.64804146765533,TRUE,robustness_15_percent,0.15
+China,sales_growth_mean,1,-499.8077418232116,FALSE,robustness_15_percent,0.15
+China,sales_growth_mean,2,-502.8552282999041,FALSE,robustness_15_percent,0.15
+China,sales_growth_mean,3,-495.2925936324399,FALSE,robustness_15_percent,0.15
+China,sales_growth_mean,4,-492.9776024098109,FALSE,robustness_15_percent,0.15
+China,sales_growth_mean,5,-485.69963721292356,FALSE,robustness_15_percent,0.15
+China,sales_log_trend,0,-156.7865654824771,FALSE,robustness_15_percent,0.15
+China,sales_log_trend,1,-254.10962628018964,FALSE,robustness_15_percent,0.15
+China,sales_log_trend,2,-319.12713253250416,FALSE,robustness_15_percent,0.15
+China,sales_log_trend,3,-341.10240353952753,FALSE,robustness_15_percent,0.15
+China,sales_log_trend,4,-360.7710787024105,TRUE,robustness_15_percent,0.15
+China,sales_log_trend,5,-345.22214131106864,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_growth_mean,0,-566.5015841909731,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_growth_mean,1,-581.6430259112517,TRUE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_growth_mean,2,-577.5064000899645,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_growth_mean,3,-577.7621312246271,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_growth_mean,4,-573.9489878669539,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_growth_mean,5,-566.466165572474,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_log_trend,0,-181.89432313947472,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_log_trend,1,-250.34400246376285,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_log_trend,2,-283.42822933541265,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_log_trend,3,-332.156162049136,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_log_trend,4,-350.40851970361393,FALSE,robustness_15_percent,0.15
+Asia Pacific/All Other,sales_log_trend,5,-367.35010716624174,TRUE,robustness_15_percent,0.15
+Total,sales_growth_mean,0,-569.5587181231283,FALSE,robustness_15_percent,0.15
+Total,sales_growth_mean,1,-572.16536507797,TRUE,robustness_15_percent,0.15
+Total,sales_growth_mean,2,-568.2090993806088,FALSE,robustness_15_percent,0.15
+Total,sales_growth_mean,3,-563.932716559797,FALSE,robustness_15_percent,0.15
+Total,sales_growth_mean,4,-561.385500655702,FALSE,robustness_15_percent,0.15
+Total,sales_growth_mean,5,-557.0239221064209,FALSE,robustness_15_percent,0.15
+Total,sales_log_trend,0,-217.54071911678784,FALSE,robustness_15_percent,0.15
+Total,sales_log_trend,1,-266.13198156372215,FALSE,robustness_15_percent,0.15
+Total,sales_log_trend,2,-334.22856418835363,FALSE,robustness_15_percent,0.15
+Total,sales_log_trend,3,-370.2859633390145,FALSE,robustness_15_percent,0.15
+Total,sales_log_trend,4,-399.7104957155449,FALSE,robustness_15_percent,0.15
+Total,sales_log_trend,5,-401.56969817732386,TRUE,robustness_15_percent,0.15
+China share of Asia Pacific,share_change,0,-928.4348259534189,TRUE,robustness_15_percent,0.15
+China share of Asia Pacific,share_change,1,-925.4561404315026,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_change,2,-919.3120311136133,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_change,3,-910.0316406723862,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_change,4,-900.9047539082467,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_change,5,-891.5523927064584,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_trend,0,-574.2256984083091,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_trend,1,-729.234481328249,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_trend,2,-785.9315428170967,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_trend,3,-810.4989242412206,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_trend,4,-808.8860425919097,FALSE,robustness_15_percent,0.15
+China share of Asia Pacific,share_trend,5,-813.932306973789,TRUE,robustness_15_percent,0.15

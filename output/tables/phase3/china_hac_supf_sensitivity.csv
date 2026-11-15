@@ -1,0 +1,13 @@
+series,specification,variance_estimator,supf_statistic,supf_p_value,maximum_pointwise_f,reject_05,reject_10
+China,sales_log_trend,classical,170.9567607393634,0,170.9567607393634,TRUE,TRUE
+China,sales_log_trend,HAC_default_Andrews,170987219953.19757,0,170987219953.19757,TRUE,TRUE
+China,sales_log_trend,NeweyWest_lag2,101.58323969906438,0,101.58323969906438,TRUE,TRUE
+China,sales_log_trend,NeweyWest_lag6,88.96491360921709,0,88.96491360921709,TRUE,TRUE
+China,sales_log_trend,NeweyWest_lag12,148.94074823022515,0,148.94074823022515,TRUE,TRUE
+China,sales_log_trend,QS_prewhite1,33.552139931643836,1.5941353734283405e-6,33.552139931643836,TRUE,TRUE
+China share of Asia Pacific,share_trend,classical,334.8078681678646,0,334.8078681678646,TRUE,TRUE
+China share of Asia Pacific,share_trend,HAC_default_Andrews,305388406407.33514,0,305388406407.33514,TRUE,TRUE
+China share of Asia Pacific,share_trend,NeweyWest_lag2,136.898829122888,0,136.898829122888,TRUE,TRUE
+China share of Asia Pacific,share_trend,NeweyWest_lag6,104.19374896529408,0,104.19374896529408,TRUE,TRUE
+China share of Asia Pacific,share_trend,NeweyWest_lag12,167.24584855004196,0,167.24584855004196,TRUE,TRUE
+China share of Asia Pacific,share_trend,QS_prewhite1,34.26362368028248,1.1259671257035644e-6,34.26362368028248,TRUE,TRUE

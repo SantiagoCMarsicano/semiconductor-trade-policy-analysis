@@ -1,0 +1,17 @@
+series,specification,h_setting,minimum_segment,variance_estimator,statistic,p_value,significant_01,significant_05,significant_10,decision_05,decision_10,evidence_strength
+China,sales_growth_mean,primary_24_months,24,classical,5.953143551149498,0.14753990230404146,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+China,sales_growth_mean,primary_24_months,24,HAC,3.8801652512382176,0.35987310953664986,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+China,sales_log_trend,primary_24_months,24,classical,170.95676073936482,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+China,sales_log_trend,primary_24_months,24,HAC,170987219953.19757,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Asia Pacific/All Other,sales_growth_mean,primary_24_months,24,classical,20.85065472787555,1.3397968260448644e-4,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Asia Pacific/All Other,sales_growth_mean,primary_24_months,24,HAC,4.806385748033369,0.24332312270283085,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Asia Pacific/All Other,sales_log_trend,primary_24_months,24,classical,112.22145128341221,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Asia Pacific/All Other,sales_log_trend,primary_24_months,24,HAC,7174.210728446593,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Total,sales_growth_mean,primary_24_months,24,classical,11.800513111470378,0.010085772212903073,FALSE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Conventional evidence (0.01 < p <= 0.05)
+Total,sales_growth_mean,primary_24_months,24,HAC,6.710428548460621,0.10530853584744271,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+Total,sales_log_trend,primary_24_months,24,classical,78.66903717056881,2.220446049250313e-16,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+Total,sales_log_trend,primary_24_months,24,HAC,9170.421865289654,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+China share of Asia Pacific,share_change,primary_24_months,24,classical,6.843683740513485,0.09919675086368998,FALSE,FALSE,TRUE,Do not reject structural stability at 5%,Reject structural stability at 10%,Marginal evidence (0.05 < p <= 0.10)
+China share of Asia Pacific,share_change,primary_24_months,24,HAC,5.36916079151435,0.19069247088561422,FALSE,FALSE,FALSE,Do not reject structural stability at 5%,Do not reject structural stability at 10%,No evidence at 10%
+China share of Asia Pacific,share_trend,primary_24_months,24,classical,334.80786816786457,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)
+China share of Asia Pacific,share_trend,primary_24_months,24,HAC,305388406407.33514,0,TRUE,TRUE,TRUE,Reject structural stability at 5%,Reject structural stability at 10%,Strong evidence (p <= 0.01)

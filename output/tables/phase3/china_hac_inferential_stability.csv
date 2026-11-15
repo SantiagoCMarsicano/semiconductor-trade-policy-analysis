@@ -1,0 +1,3 @@
+series,specification,hac_estimators_checked,all_reject_05,all_reject_10,minimum_hac_statistic,maximum_hac_statistic,minimum_hac_p_value,maximum_hac_p_value,conclusion
+China,sales_log_trend,5,TRUE,TRUE,33.552139931643836,170987219953.19757,0,1.5941353734283405e-6,Structural-instability conclusion is robust across HAC estimators at 5%
+China share of Asia Pacific,share_trend,5,TRUE,TRUE,34.26362368028248,305388406407.33514,0,1.1259671257035644e-6,Structural-instability conclusion is robust across HAC estimators at 5%
