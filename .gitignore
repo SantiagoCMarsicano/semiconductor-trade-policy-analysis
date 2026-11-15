@@ -36,3 +36,11 @@ Thumbs.db
 ~$*
 
 # Do NOT ignore docs/: research design is part of the repository.
+# Local documentary archive
+sources/**/*.pdf
+sources/_*.csv
+# Local working files
+repo_snapshot.txt
+docs/Semiconductors_II_Preliminary_Report_Phases_1_and_2.docx
+repair_semiconductores2_repo.ps1
+finalize_phase3b_repo.py

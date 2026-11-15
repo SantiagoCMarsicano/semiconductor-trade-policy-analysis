@@ -10,15 +10,20 @@
 
 **H1:** las políticas comerciales y tecnológicas de Estados Unidos y China produjeron cambios estadísticamente significativos en la dinámica de las ventas de semiconductores.
 
-## Historical working periods
+## Historical policy chronology
 
-- 2010–2013: Pre / contexto
-- 2014–2016: Industrial policy / early rivalry
-- 2017–2020: Trade-Tech War I / Trump I
-- 2021–2024: Biden
-- 2025: Trump II / initial extension
+The initial presidency-based working periods are no longer used as empirical intervention windows.
 
-These periods are historical working hypotheses, not econometric conclusions.
+Policy dates and historical stages are documented in:
+
+- docs/phase3b_timeline_guide.md
+- data/manual/phase3b_source_registry.csv
+
+The chronology was constructed after the initial endogenous structural-break analysis. Policy dates must therefore be selected from documented institutional events rather than chosen to match estimated breakpoints.
+
+Announcement, enactment and effective dates should be distinguished whenever relevant.
+
+Temporal proximity between a policy event and a statistical breakpoint is not, by itself, evidence of causality.
 
 ## Initial empirical workflow
 
