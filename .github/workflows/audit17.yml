@@ -1,0 +1,33 @@
+name: Audit 17 reproducibility (smoke)
+
+on:
+  push:
+    paths:
+      - 'R/17_reproduce_audit_checks.R'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit17:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install R dependency
+        run: Rscript -e 'install.packages("strucchange", repos="https://cloud.r-project.org")'
+      - name: Execute script 17 smoke run (5 replications)
+        env:
+          SEMICON_AUDIT_REPS: '5'
+        run: Rscript R/17_reproduce_audit_checks.R
+      - name: Upload audit tables and notes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit17-smoke-results
+          path: output/tables/phase3/audit17/
+          if-no-files-found: warn
