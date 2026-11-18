@@ -1,0 +1,5 @@
+"specification","observations","min_segment_observations","chosen_breaks","BIC_0_breaks","minimum_BIC"
+"raw_monthly_growth_mean",191,24,0,-341.670741011456,-341.670741011456
+"position_demeaned_monthly_growth_mean",191,24,0,-573.182074726483,-573.182074726483
+"raw_monthly_log_trend",192,24,3,-261.670678353879,-387.195689668294
+"quarterly_log_growth_mean",63,8,0,-168.227587557554,-168.227587557554

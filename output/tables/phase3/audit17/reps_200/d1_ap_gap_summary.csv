@@ -1,0 +1,2 @@
+"n_months","n_gap_over_0_02","frac_gap_over_0_02","n_gap_over_0_03","n_gap_over_0_05","n_gap_over_0_10","n_gap_over_0_30","mean_abs_gap_billions","median_abs_gap_billions","p90_abs_gap_billions","max_abs_gap_billions","mean_abs_rel_gap_percent","mean_signed_gap_billions","max_abs_construction_check_gap"
+132,80,0.606060606060606,71,59,46,12,0.103599037878788,0.0397715,0.2697219,1.045085,0.385215764311487,-0.0629150681818182,0

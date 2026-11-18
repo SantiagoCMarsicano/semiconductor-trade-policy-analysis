@@ -1,0 +1,44 @@
+Semiconductors II - Script 19, Phase 3A methodological reassessment
+Execution date: 2026-11-18
+Git state: not queried; record the relevant commit manually if desired
+Input MD5: ec325ef9a31af59a5248ac298babd458
+R version: 4.5.1
+strucchange version: 1.6.0
+Bootstrap replications per case: 399
+Base seed: 19112026
+
+PRIMARY questions: WSTS Worldwide growth; China +12m growth 2015-2024; relative China/AP Other change 2015-2024.
+OTHER WSTS regions, AP Other, alternative trim h, mixed vintages and extended 2025 are sensitivity analyses.
+2025 is not part of SIA +12m primary sample. Extended 2025 case is sensitivity only.
+Bootstrap null: quarter seasonal fixed intercepts, stable stationary AR(p), centered iid resampled residuals.
+Search: one unknown conditional-mean shift; date is selected endogenously in every observed/bootstrap series.
+p-value is bootstrap-calibrated for date search under this specific null; not a universal structural break test.
+Primary inference uses AR(1) and Holm adjustment across 3 primary tests; AR(2) is a sensitivity check.
+Null residual Ljung-Box(8) p<0.05 flags potential AR underfit and unreliable bootstrap calibration.
+Results remain sensitive to heteroskedasticity, time-varying seasonality and multiple or transitory breaks.
+The estimated conditional shift and timing are post-selection DESCRIPTIVE, not unbiased causal effects.
+Level-trend Bai-Perron BIC is EXPLORATORY: persistent / I(1) levels can yield spurious breaks.
+No policy date imposed. No policy effect identified. No Phase 3C analysis run.
+
+SESSION:
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=Spanish_Uruguay.utf8  LC_CTYPE=Spanish_Uruguay.utf8    LC_MONETARY=Spanish_Uruguay.utf8
+[4] LC_NUMERIC=C                     LC_TIME=Spanish_Uruguay.utf8    
+
+time zone: America/Montevideo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] zoo_1.9-1         compiler_4.5.1    strucchange_1.6-0 sandwich_3.1-3    tools_4.5.1       xts_0.14.3       
+ [7] rstudioapi_0.17.1 curl_7.0.0        quantmod_0.4.29   tseries_0.10-63   grid_4.5.1        TTR_0.24.4       
+[13] lattice_0.22-7    quadprog_1.5-8   

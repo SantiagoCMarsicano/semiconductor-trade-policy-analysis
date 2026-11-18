@@ -1,0 +1,48 @@
+Semiconductors II — Script 17 methodological replication (v3)
+Date: 2026-11-18
+strucchange version: 1.6.0
+R version: 4.5.1
+RNGkind: Mersenne-Twister / Inversion / Rejection
+Base seed: 17112026 (AR(1) block: +1, calendar block: +2); replications per Monte Carlo case: 200
+
+S1: quarter-end calendar effect is an observed pattern, not proof of a 4-4-5 reporting calendar.
+S1: within-quarter and adjacent-month definitions of quarter-end excess are reported separately (64 vs 63 cases).
+S2: Monte Carlo results use strucchange BIC (AIC with k = log(n), zero breaks included), identical to summary()$RSS['BIC', ] used in R/14.
+S2: in the trend design, BIC selection is invariant to intercept, slope and noise scale (each segment has its own linear trend; scaling noise scales all RSS equally). Only phi, n and h matter.
+S2: Monte Carlo model is stylized; results are not estimates of actual market break size/power.
+S2: BIC model selection is not a calibrated supF significance test. SupF inference belongs in Script 19.
+S2: strucchange may emit 'sorting not possible' warnings from summary.breakpointsfull; these only affect display ordering of break dates, not RSS/BIC or selected break counts.
+S4: 3MMA autocorrelation includes a mechanical overlap component but may also reflect economic dynamics.
+S4: theoretical 2/3 and 1/3 lag correlations require an equal-weight MA of iid innovations; a trailing 3MMA also removes any fixed within-quarter pattern exactly.
+S4: empirical benchmark = trailing 3-term MA of calendar-demeaned monthly growth; Working (1960) benchmark for quarterly aggregation of a random walk: ACF(1) = 8/38.
+D1: SIA first release vs WSTS historical mixes source and vintage differences (d1_* files).
+D1: the AP construction check is zero by construction (R/05 defines AP total as China + AP Other); the genuine internal check is published Total vs sum of five regions.
+D1: a nominal 0.02-billion tolerance is descriptive and may be too strict for multi-vintage data.
+D2: actual revisions = same reference month, first publication vs 'Last Year' column 12 months later (2016-2024), for AP total, China and China share.
+D2: source_method documents a 2015 retrospective (+12-month vintage) / 2016-2025 first-publication boundary.
+D2: the +12-month retrospective is not necessarily the final WSTS vintage.
+Comparisons of revisions and gaps are made after rounding to 1e-6 (two-decimal source values).
+All Phase 3A break dates remain provisional until Scripts 18 and 19.
+No policy dates were imposed, and no causal effect is identified.
+
+sessionInfo():
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=Spanish_Uruguay.utf8  LC_CTYPE=Spanish_Uruguay.utf8    LC_MONETARY=Spanish_Uruguay.utf8 LC_NUMERIC=C                    
+[5] LC_TIME=Spanish_Uruguay.utf8    
+
+time zone: America/Montevideo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] zoo_1.9-1         compiler_4.5.1    strucchange_1.6-0 sandwich_3.1-3    tools_4.5.1       xts_0.14.3        rstudioapi_0.17.1 curl_7.0.0       
+ [9] quantmod_0.4.29   tseries_0.10-63   grid_4.5.1        TTR_0.24.4        lattice_0.22-7    quadprog_1.5-8   

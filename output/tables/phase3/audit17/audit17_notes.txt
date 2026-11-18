@@ -1,0 +1,20 @@
+Semiconductors II — Script 17 methodological replication
+Date: 2026-11-17
+strucchange version: 1.6.0
+R version: 4.5.1
+Random seed: 17112026; replications per Monte Carlo case: 200
+
+S1: quarter-end calendar effect is an observed pattern, not proof of a 4-4-5 reporting calendar.
+S1: within-quarter and auditor-adjacent-month definitions of quarter-end excess are reported separately (64 vs 63 cases).
+S2: Monte Carlo results use strucchange BIC, not the external audit's custom Python algorithm.
+S2: Monte Carlo model is stylized and partly calibrated; results are not estimates of actual market break size/power.
+S2: BIC model selection is not a calibrated supF significance test. SupF inference belongs in Script 19.
+S4: 3MMA autocorrelation includes a mechanical overlap component but may also reflect economic dynamics.
+S4: theoretical 2/3 and 1/3 lag correlations require idealized equal-weight moving average of iid innovations.
+D1: a nominal 0.02-billion tolerance is descriptive and may be too strict for multi-vintage data.
+D2: matching SIA current to WSTS historical 3MMA compares two documentary series, not observed revision paths.
+D2: source_method documents a 2015 retrospective/2016-2025 current-publication boundary.
+D2: same-month first-publication vs +12-month retrospective revisions are paired from the existing PDF-parse audit CSV for 2016-2024.
+D2: the +12-month retrospective is not necessarily the final WSTS vintage; compare without assuming identical data definitions.
+All Phase 3A break dates remain provisional until Scripts 18 and 19.
+No policy dates were imposed, and no causal effect is identified.

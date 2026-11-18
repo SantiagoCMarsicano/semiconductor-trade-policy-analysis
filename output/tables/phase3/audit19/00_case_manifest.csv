@@ -1,0 +1,16 @@
+"case_id","label","role","source","mode","first_quarter","last_quarter","n_levels","n_growth","min_postlag_segment_observations"
+"world_wsts","WSTS Worldwide","primary","WSTS","sales","2010Q1","2025Q4",64,63,8
+"china_v12","SIA China +12m 2015-2024","primary","SIA_vintage12m","sales","2015Q1","2024Q4",40,39,6
+"china_ratio_v12","SIA log(China/AP Other) +12m","primary","SIA_vintage12m","ratio","2015Q1","2024Q4",40,39,6
+"america_wsts","WSTS America","secondary","WSTS","sales","2010Q1","2025Q4",64,63,8
+"europe_wsts","WSTS Europe","secondary","WSTS","sales","2010Q1","2025Q4",64,63,8
+"japan_wsts","WSTS Japan","secondary","WSTS","sales","2010Q1","2025Q4",64,63,8
+"ap_wsts","WSTS Asia Pacific","secondary","WSTS","sales","2010Q1","2025Q4",64,63,8
+"ap_other_v12","SIA AP Other +12m 2015-2024","secondary","SIA_vintage12m","sales","2015Q1","2024Q4",40,39,6
+"china_mixed","SIA China mixed 2015-2024","vintage_sensitivity","SIA_processed_mixed_vintage","sales","2015Q1","2024Q4",40,39,6
+"ratio_mixed","SIA ratio mixed 2015-2024","vintage_sensitivity","SIA_processed_mixed_vintage","ratio","2015Q1","2024Q4",40,39,6
+"world_h10","WSTS Worldwide h=10-quarter sensitivity","trimming_sensitivity","WSTS","sales","2010Q1","2025Q4",64,63,10
+"china_v12_h8","SIA China +12m h=8-quarter sensitivity","trimming_sensitivity","SIA_vintage12m","sales","2015Q1","2024Q4",40,39,8
+"ratio_v12_h8","SIA ratio +12m h=8-quarter sensitivity","trimming_sensitivity","SIA_vintage12m","ratio","2015Q1","2024Q4",40,39,8
+"china_2025","SIA China +12m plus 2025","extension_sensitivity","SIA_vintage12m","sales","2015Q1","2025Q4",44,43,7
+"ratio_2025","SIA ratio +12m plus 2025","extension_sensitivity","SIA_vintage12m","ratio","2015Q1","2025Q4",44,43,7

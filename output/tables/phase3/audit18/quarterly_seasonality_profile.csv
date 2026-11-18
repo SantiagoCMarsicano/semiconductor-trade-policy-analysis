@@ -1,0 +1,57 @@
+"series","vintage","role","quarter","n_years","mean_ratio_to_annual_quarter_mean","sd_ratio"
+"WSTS America","WSTS historical","primary",1,16,0.902524331789644,0.0730757951451528
+"WSTS America","WSTS historical","primary",2,16,0.942355700016649,0.0495350631810634
+"WSTS America","WSTS historical","primary",3,16,1.04486233704114,0.034478177373857
+"WSTS America","WSTS historical","primary",4,16,1.11025763115256,0.0973293676415039
+"WSTS Europe","WSTS historical","primary",1,16,0.998508613970927,0.0482291034010464
+"WSTS Europe","WSTS historical","primary",2,16,0.985126684304193,0.0390004990150498
+"WSTS Europe","WSTS historical","primary",3,16,1.01514414275176,0.017044751305108
+"WSTS Europe","WSTS historical","primary",4,16,1.00122055897312,0.0555769617045919
+"WSTS Japan","WSTS historical","primary",1,16,0.962780163090603,0.0333968688601145
+"WSTS Japan","WSTS historical","primary",2,16,0.97888410333106,0.0317842648763472
+"WSTS Japan","WSTS historical","primary",3,16,1.04296144606247,0.0265071600933474
+"WSTS Japan","WSTS historical","primary",4,16,1.01537428751587,0.0419936544929636
+"WSTS Asia Pacific","WSTS historical","primary",1,16,0.939138509058879,0.0622044513605909
+"WSTS Asia Pacific","WSTS historical","primary",2,16,0.984757688232751,0.0387814562987648
+"WSTS Asia Pacific","WSTS historical","primary",3,16,1.03794040160494,0.0262130395425081
+"WSTS Asia Pacific","WSTS historical","primary",4,16,1.03816340110343,0.0802489239816499
+"WSTS Worldwide","WSTS historical","primary",1,16,0.938375753835718,0.0523736093559562
+"WSTS Worldwide","WSTS historical","primary",2,16,0.97391159798904,0.0348476774064472
+"WSTS Worldwide","WSTS historical","primary",3,16,1.03845311491221,0.0203803134397532
+"WSTS Worldwide","WSTS historical","primary",4,16,1.04925953326303,0.0713889855151597
+"SIA China [single vintage 2015-2024]","plus_12_months","primary",1,10,0.929492519424575,0.0712089885511425
+"SIA China [single vintage 2015-2024]","plus_12_months","primary",2,10,0.984729338943999,0.0434234497930937
+"SIA China [single vintage 2015-2024]","plus_12_months","primary",3,10,1.04112014675055,0.0377697442880147
+"SIA China [single vintage 2015-2024]","plus_12_months","primary",4,10,1.04465799488087,0.0915387186338667
+"SIA AP Other [single vintage 2015-2024]","plus_12_months","primary",1,10,0.973861375553811,0.0490930338553666
+"SIA AP Other [single vintage 2015-2024]","plus_12_months","primary",2,10,0.977721122206587,0.0477243357704808
+"SIA AP Other [single vintage 2015-2024]","plus_12_months","primary",3,10,1.02343186506689,0.029044745894068
+"SIA AP Other [single vintage 2015-2024]","plus_12_months","primary",4,10,1.02498563717272,0.0671786513241453
+"SIA AP total [single vintage 2015-2024]","plus_12_months","primary",1,10,0.949907978922833,0.0595434621968881
+"SIA AP total [single vintage 2015-2024]","plus_12_months","primary",2,10,0.982143374765204,0.0423187365268587
+"SIA AP total [single vintage 2015-2024]","plus_12_months","primary",3,10,1.03308595710307,0.0319478561887002
+"SIA AP total [single vintage 2015-2024]","plus_12_months","primary",4,10,1.0348626892089,0.0773879068080351
+"SIA China [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",1,11,0.922146391871715,0.0718141318660954
+"SIA China [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",2,11,0.981523936859333,0.0425447649013158
+"SIA China [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",3,11,1.0400480174545,0.0360075311389955
+"SIA China [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",4,11,1.05628165381445,0.0950137212473147
+"SIA AP Other [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",1,11,0.95435393013824,0.0797186180817752
+"SIA AP Other [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",2,11,0.969623410025043,0.0526417455123456
+"SIA AP Other [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",3,11,1.028546633983,0.0323574876862099
+"SIA AP Other [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",4,11,1.04747602585372,0.0981104861246073
+"SIA AP total [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",1,11,0.936623903929761,0.0716380808927081
+"SIA AP total [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",2,11,0.976396033744282,0.0444425374165933
+"SIA AP total [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",3,11,1.03504384396925,0.0309962174198233
+"SIA AP total [single vintage + 2025 first release]","plus_12_months_with_2025","sensitivity",4,11,1.05193621835671,0.0927176287514368
+"SIA China [mixed vintage 2015-2024]","processed_mixed","sensitivity",1,10,0.928935495149937,0.069202364730328
+"SIA China [mixed vintage 2015-2024]","processed_mixed","sensitivity",2,10,0.985880636781652,0.0480638842866512
+"SIA China [mixed vintage 2015-2024]","processed_mixed","sensitivity",3,10,1.03975142792722,0.0367782633498373
+"SIA China [mixed vintage 2015-2024]","processed_mixed","sensitivity",4,10,1.04543244014119,0.0932523311352021
+"SIA AP Other [mixed vintage 2015-2024]","processed_mixed","sensitivity",1,10,0.972715161328821,0.0487706065758775
+"SIA AP Other [mixed vintage 2015-2024]","processed_mixed","sensitivity",2,10,0.978460584182824,0.0525477677730619
+"SIA AP Other [mixed vintage 2015-2024]","processed_mixed","sensitivity",3,10,1.02298123788816,0.0320479211936819
+"SIA AP Other [mixed vintage 2015-2024]","processed_mixed","sensitivity",4,10,1.02584301660019,0.0685305871390868
+"SIA AP total [mixed vintage 2015-2024]","processed_mixed","sensitivity",1,10,0.949051081752701,0.0574569193201283
+"SIA AP total [mixed vintage 2015-2024]","processed_mixed","sensitivity",2,10,0.983123286279628,0.0471840170326979
+"SIA AP total [mixed vintage 2015-2024]","processed_mixed","sensitivity",3,10,1.03213129976844,0.0324032609548398
+"SIA AP total [mixed vintage 2015-2024]","processed_mixed","sensitivity",4,10,1.03569433219923,0.078943980937199

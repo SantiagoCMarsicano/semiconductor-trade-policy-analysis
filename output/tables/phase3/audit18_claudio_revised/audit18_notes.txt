@@ -1,0 +1,47 @@
+Semiconductors II — Script 18 quarterly series diagnostics
+Date: 2026-11-18
+R version: 4.5.1; tseries 0.10.63; sandwich 3.1.3
+2025 source vintage in fixed-horizon series: first_release
+WSTS quarterly sum vs 3 x 3MMA quarter-end max gap: 5.68e-14
+2015 +12-month vintage reproduces processed 2015 values: max gap 0
+
+A: +12-month vintage = 'Last Year' column of the SIA release for the same month one year later.
+A: 2015-2024 fixed +12-month REVISION HORIZON (not a single publication vintage).
+A: 2025 is first release unless data/manual/sia_2025_vintage12m.csv is supplied.
+B: WSTS quarterly = sum of monthly flows. SIA quarterly = 3 x trailing 3MMA at quarter-end months.
+B: Relative China series may remove strictly common proportional shocks; unequal regional exposure to memory pricing and demand can remain.
+B: Ratios and market shares are relative outcomes, NOT automatically valid causal controls.
+C: ADF/PP interpolated p-value range [0.01, 0.99]; KPSS range [0.01, 0.10]. See p_value_bound.
+C: ADF lag order follows the tseries default trunc((n - 1)^(1/3)); n is small (40-64 quarters), so power is low.
+C: Classical seasonality F-test assumes uncorrelated errors and is descriptive.
+C: Added HAC-robust joint seasonality Wald test (Newey-West, fixed 4 quarter lags, prewhite=FALSE).
+C: HAC Wald p-values use asymptotic chi-square; short quarterly samples require caution.
+C: Working (1960) benchmark: quarterly aggregation of a monthly random walk alone gives growth ACF(1) = 8/38 = 0.21.
+C: AR order chosen by BIC (p = 0..4) on quarter-of-year demeaned growth; not a final dynamic model.
+C: Models that fail to converge are excluded; BIC gap to runner-up and residual Ljung-Box(8) (fitdf=p) are reported.
+C: BIC-selected AR order and Ljung-Box are diagnostics, not proof of stationarity or valid causal inference.
+D: compares first-release (processed) and +12-month vintages over 2015Q1-2024Q4.
+No policy dates were imposed, and no causal effect is identified.
+
+sessionInfo():
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=Spanish_Uruguay.utf8  LC_CTYPE=Spanish_Uruguay.utf8    LC_MONETARY=Spanish_Uruguay.utf8
+[4] LC_NUMERIC=C                     LC_TIME=Spanish_Uruguay.utf8    
+
+time zone: America/Montevideo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] zoo_1.9-1         compiler_4.5.1    strucchange_1.6-0 sandwich_3.1-3    tools_4.5.1       xts_0.14.3       
+ [7] rstudioapi_0.17.1 curl_7.0.0        quantmod_0.4.29   tseries_0.10-63   grid_4.5.1        TTR_0.24.4       
+[13] lattice_0.22-7    quadprog_1.5-8   

@@ -1,0 +1,50 @@
+Semiconductors II — Script 18 quarterly diagnostics (merged version)
+Date: 2026-11-18
+Git commit: 6e24e2514cc801a9d3f19049c974eed7b7da9b08
+R: 4.5.1
+tseries: 0.10.63
+data/processed/wsts_monthly_2010_2025.csv MD5 = 62d7439678192bb41c9411f20bf32f03
+data/processed/wsts_3mma_2010_2025.csv MD5 = 138758be59a8c8c51a4f761de7109820
+data/processed/sia_regional_3mma_2015_2025.csv MD5 = cf70abc0287390f15386b87caea15a57
+output/tables/phase1/sia_regional_pdf_parse_audit.csv MD5 = f3bdc8b63453631110e6ec4b8cbb39c6
+2025 in single-vintage series: first_release
+
+WSTS: 2010Q1-2025Q4, 64 quarters, sums of original monthly billings.
+SIA: implied quarters = 3 x quarter-end 3MMA. Do not sum overlapping 3MMA values.
+SIA single vintage: each month 2015-2024 from the 'Last Year' column of the release 12 months later.
+SIA processed series mixes vintages (2015 +12-month, 2016-2025 first release): sensitivity only.
+Primary SIA window is 2015Q1-2024Q4 (40 quarters); 2025 is sensitivity unless revised values are supplied.
+Quarter-of-year demeaning uses the complete sample and is DESCRIPTIVE only.
+Seasonality F-test assumes uncorrelated errors: descriptive.
+Working (1960) benchmark: aggregation of a monthly random walk alone gives quarterly ACF(1) = 8/38 = 0.21.
+Remaining dynamics: AR(p), p = 0..4, by BIC on quarter-demeaned changes; residual Ljung-Box(8) uses fitdf = p.
+Unit-root tests may have low power with 40 to 64 quarterly observations.
+ADF/PP null is unit root; KPSS null is (trend-)stationarity.
+ADF/PP options use tseries conventions; see saved warning columns.
+Seasonal difference (lag 4) overlaps annual windows: MA(3) autocorrelation is mechanical (mechanical_overlap = TRUE).
+Serial dependence tests are on observed changes, not model residuals (except residual_lb8_p).
+Structural breaks can affect stationarity-test conclusions.
+No structural break estimation, policy modelling or Monte Carlo in Script 18.
+
+R session information:
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=Spanish_Uruguay.utf8  LC_CTYPE=Spanish_Uruguay.utf8    LC_MONETARY=Spanish_Uruguay.utf8
+[4] LC_NUMERIC=C                     LC_TIME=Spanish_Uruguay.utf8    
+
+time zone: America/Montevideo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] zoo_1.9-1         compiler_4.5.1    sandwich_3.1-3    tools_4.5.1       xts_0.14.3        rstudioapi_0.17.1
+ [7] curl_7.0.0        quantmod_0.4.29   tseries_0.10-63   grid_4.5.1        TTR_0.24.4        lattice_0.22-7   
+[13] quadprog_1.5-8   

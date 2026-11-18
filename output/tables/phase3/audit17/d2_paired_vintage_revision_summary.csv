@@ -1,0 +1,2 @@
+"n_months","mean_revision_billions","median_revision_billions","sd_revision_billions","n_revision_positive","n_revision_negative","n_revision_zero","mean_abs_gap_first_vs_wsts","mean_abs_gap_after12_vs_wsts","max_abs_gap_first_vs_wsts","max_abs_gap_after12_vs_wsts","n_within_002_first","n_within_002_after12","fraction_closer_after12"
+108,0.0546296296296296,0.0150000000000006,0.138822995791797,59,23,26,0.0981352499999999,0.00908744753086434,0.61927433333333,0.315230333333332,39,104,0.740740740740741

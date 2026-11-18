@@ -1,0 +1,52 @@
+Semiconductors II - Script 19 revised, Phase 3A methodological reassessment
+Execution date: 2026-11-18
+Git state not queried, and no repository operations executed.
+Quarterly input MD5: ec325ef9a31af59a5248ac298babd458
++12m vintage input MD5: a87848f667d744de5daecf6de3180464
+R version: 4.5.1
+Bootstrap replications per evaluated case/method: 399
+Base seed: 19112026
+
+PREDECLARED PRIMARY: WSTS Worldwide (AR1); SIA China +12m 2015-2024 (AR1);
+log(China/AP Other) +12m 2015-2024 (AR0), on QUARTERLY CHANGES.
+Other orders, WSTS regions, AP Other, trimming, mixed vintages and 2025 are exploratory.
+2025 is excluded from the SIA fixed +12m primary window.
+Null AR model has stable seasonal quarterly intercepts and stable dynamics.
+Two primary bootstraps: centered IID residual and Rademacher wild sign-flip.
+Wild sign-flip helps sensitivity to changing volatility, not to serial dependence.
+All bootstrap draws re-search every admissible unknown break date.
+Primary p-values Holm-adjusted separately for IID and wild across exactly three tests.
+Missing primary p-value => NO Holm adjustment and NOT_EVALUABLE, not EXPLORATORY.
+Ljung-Box(8) residual rejection => INCONCLUSIVE conditional bootstrap inference.
+Long-run shift is delta/(1-sum(phi_j)) using ALTERNATIVE post-selection AR coefficients.
+Long-run estimate is DESCRIPTIVE, with neither post-selection CI nor causal interpretation.
+Long-run estimate omitted if alternative AR unstable or multiplier denominator <=0.05.
+Bootstrap checks only a single permanent conditional-mean shift; multiple/transitory breaks may be missed.
+With only 39 quarterly changes in the SIA primary sample, lack of rejection
+is NOT evidence of zero effect, nor does it rule out economically meaningful small changes.
+No power threshold was established: do NOT claim a specific detectable change size.
+No BIC dates in integrated log levels: see Script 17 limitations.
+No policy date imposed; no causal impact identified. Phase 3C remains unopened.
+
+SESSION:
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=Spanish_Uruguay.utf8  LC_CTYPE=Spanish_Uruguay.utf8    LC_MONETARY=Spanish_Uruguay.utf8
+[4] LC_NUMERIC=C                     LC_TIME=Spanish_Uruguay.utf8    
+
+time zone: America/Montevideo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] zoo_1.9-1         compiler_4.5.1    strucchange_1.6-0 sandwich_3.1-3    tools_4.5.1       xts_0.14.3       
+ [7] rstudioapi_0.17.1 curl_7.0.0        quantmod_0.4.29   tseries_0.10-63   grid_4.5.1        TTR_0.24.4       
+[13] lattice_0.22-7    quadprog_1.5-8   
